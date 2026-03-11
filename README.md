@@ -13,7 +13,7 @@ This repository demonstrates a tiny reproducible MLOps flow:
     source .venv/bin/activate  
     
     or
-     
+     "credsStore": "pass"
     . .venv/bin/activate
 
 2. Install dependencies:
@@ -30,3 +30,11 @@ This repository demonstrates a tiny reproducible MLOps flow:
     python src/app.py
    Then test:
     curl -X POST "http://127.0.0.1:5000/predict" -H "Content-Type: application/json" -d '{"features":[5.1,3.5,1.4,0.2]}'
+
+6. Containerization 
+
+   Write Dockerfile 
+
+   docker build -t hello-mlops:latest .
+
+   docker run -d -p 5001:5001 hello-mlops:latest
