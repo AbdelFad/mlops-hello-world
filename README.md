@@ -10,7 +10,11 @@ This repository demonstrates a tiny reproducible MLOps flow:
 ## Quick start (local)
 1. Create and activate a venv (example using python 3.13 or 3.11):
     python -m venv .venv
-    source .venv/bin/activate
+    source .venv/bin/activate  
+    
+    or
+     
+    . .venv/bin/activate
 
 2. Install dependencies:
     pip install --upgrade pip setuptools wheel
